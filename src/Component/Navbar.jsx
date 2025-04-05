@@ -47,7 +47,7 @@ function Navbar() {
             <p>Back</p>
           </div>
     {/* [mob profir] */}
-          <div className="mb-2 py-2 pl-7">
+          <div className="mb-2 py-2 pl-7 hidden">
             <div className="flex items-center gap-2 "> 
             <p className='bg-red-400 text-white px-[16px] py-2 rounded-[100%] text-2xl text-center cursor-pointer font-semibold'>V</p>
             <div className="text-sm">
