@@ -27,9 +27,9 @@ function Navbar() {
         </NavLink>
       </ul>
       <div className="md:flex items-center gap-4 hidden">
-      <Link to='/login'><button className='bg-[#009b8f] hover:bg-[#6ED4D4] text-white px-5 py-2 rounded-xl font-light cursor-pointer text-xl'>Dashboard</button></Link>
-        <Link to='/login'><button className='bg-[#009b8f] hover:bg-[#6ED4D4] text-white px-5 py-2 rounded-xl font-light cursor-pointer text-xl hidden'>Sign Up</button></Link>
-         <div className="group relative">
+      <Link to='/login'><button className='bg-[#009b8f] hover:bg-[#6ED4D4] text-white px-5 py-2 rounded-xl font-light cursor-pointer text-xl hidden'>Dashboard</button></Link>
+        <Link to='/login'><button className='bg-[#009b8f] hover:bg-[#6ED4D4] text-white px-5 py-2 rounded-xl font-light cursor-pointer text-xl '>Sign Up</button></Link>
+         <div className="group relative hidden">
         <p className='bg-red-400 text-white px-3.5 py-2 rounded-[100%] text-xl text-center cursor-pointer '>VI
        </p>
        <div className="group-hover:block hidden absolute right-0 pt-3">
@@ -48,7 +48,7 @@ function Navbar() {
             <p>Back</p>
           </div>
     {/* [mob profir] */}
-          <div className="mb-2 py-2 pl-7 ">
+          <div className="mb-2 py-2 pl-7 hidden ">
             <div className="flex items-center gap-2 "> 
             <p className='bg-red-400 text-white px-[16px] py-2 rounded-[100%] text-2xl text-center cursor-pointer font-semibold'>V</p>
             <div className="text-sm">
@@ -61,7 +61,7 @@ function Navbar() {
           <NavLink onClick={()=>setVisible(false)}  className='py-2 pl-7 border border-[#e5e7eb] cursor-pointer' to='/'>Home</NavLink>
           <NavLink onClick={()=>setVisible(false)}  className='py-2 pl-7 border border-[#e5e7eb]  cursor-pointer' to='/about'>About Us</NavLink>
           <NavLink onClick={()=>setVisible(false)}  className='py-2 pl-7 border border-[#e5e7eb] cursor-pointer' to='/contact'>Contact Us</NavLink>
-          <div className=" hidden md:flex gap-25 absolute bottom-4 font-semibold items-center text-lg w-full justify-center text-white border-t border-gray-200 pt-3 md:px-0 ">
+          <div className="flex gap-25 absolute bottom-4 font-semibold items-center text-lg w-full justify-center text-white border-t border-gray-200 pt-3 md:px-0 ">
             <Link to='/login'><button className=' px-3 py-2  rounded text-[#009b8f] cursor-pointer tracking-wider'>Login</button></Link>
             <Link to='/login'><button className='bg-[#009b8f] w-35  py-1.5 rounded-xl cursor-pointer tracking-wider'>Sign Up</button></Link>
           </div>
