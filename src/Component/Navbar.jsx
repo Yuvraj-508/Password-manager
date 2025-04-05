@@ -10,7 +10,7 @@ function Navbar() {
   const [visible,setVisible]=useState(false)
 
   return (
-    <div className='flex items-center justify-between py-2 font-light navbar px-[10vw]'>
+    <div className='flex items-center justify-between py-1 font-light navbar px-[10vw]'>
       <Link to='/' className='text-[46px] mb-3'>Logo</Link>
       <ul className='md:flex gap-8 text-xl text-gray-700 hidden'>
         <NavLink to='/' className='flex flex-col items-center gap-1'>
