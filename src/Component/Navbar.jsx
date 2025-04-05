@@ -26,12 +26,13 @@ function Navbar() {
          <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
         </NavLink>
       </ul>
-      <div className="md:flex items-center gap-5 hidden">
-        <Link to='/login'><button className='bg-[#009b8f] hover:bg-[#6ED4D4] text-white px-5 py-2 rounded-xl font-light cursor-pointer text-xl'>Sign Up</button></Link>
-         <div className="group relative hidden">
+      <div className="md:flex items-center gap-4 ">
+      <Link to='/login'><button className='bg-[#009b8f] hover:bg-[#6ED4D4] text-white px-5 py-2 rounded-xl font-light cursor-pointer text-xl'>Dashboard</button></Link>
+        <Link to='/login'><button className='bg-[#009b8f] hover:bg-[#6ED4D4] text-white px-5 py-2 rounded-xl font-light cursor-pointer text-xl hidden'>Sign Up</button></Link>
+         <div className="group relative">
         <p className='bg-red-400 text-white px-3.5 py-2 rounded-[100%] text-xl text-center cursor-pointer '>VI
        </p>
-       <div className="group-hover:block hidden absolute right-0 pt-3">
+       <div className="group-hover:block hidden  right-0 pt-3">
         <Link to='/logout'><button className="text-lg bg-slate-200 hover:bg-slate-100 px-5 py-2 text-gray-500 rounded hover:text-black cursor-pointer">Logout</button></Link> 
        </div>
         </div>
