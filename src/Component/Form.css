@@ -242,7 +242,7 @@
   
   @media screen and (max-width: 450px) {
     .container{
-        margin: 0;
+        margin-bottom: 70px;
         width: 330px;
         height: 750px;
     }
