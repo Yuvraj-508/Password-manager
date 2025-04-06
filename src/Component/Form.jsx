@@ -26,10 +26,9 @@ function Form() {
             </div>
             <button type="submit" class="btn">login</button>
             <p>or login with social platforms</p>
-            <div class="social-icons flex ">
-             <Link className='w-20 '><img src={goggle} alt="" className='w-15 py-2 ' /></Link>
-             <Link className='w-20 '><img src={facebook} alt="" className='w-15 py-2 ' /></Link>
-
+            <div class="social-icons flex justify-center items-center gap-8">
+             <Link className=' shadow border border-gray-200 px-10 py-2'><img src={goggle} alt="" className='w-10' /></Link>
+             <Link className=' shadow border border-gray-200 px-10 py-2'><img src={facebook} alt="" className='w-10' /></Link>
             </div>
         </form>
       </div>
