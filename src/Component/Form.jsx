@@ -53,11 +53,9 @@ function Form() {
             </div>
             <button type="submit" class="btn">Register</button>
             <p>or Register with social platforms</p>
-            <div class="social-icons">
-                <a href="#"><i class='bx bxl-google' ></i></a>
-                <a href="#"><i class='bx bxl-facebook' ></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <div class="social-icons flex justify-center items-center gap-10">
+            <Link className=' shadow border border-gray-200 px-10 py-2'><img src={goggle} alt="" className='w-10' /></Link>
+            <Link className=' shadow border border-gray-200 px-10 py-2'><img src={facebook} alt="" className='w-10' /></Link>
             </div>
         </form>
       </div>
