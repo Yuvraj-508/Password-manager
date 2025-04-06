@@ -70,14 +70,7 @@
     font-weight: 400;
   }
   
-  .input-box i {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #333;
-  }
+
   
   .forgot-link {
     margin: -15px 0 15px;
@@ -97,7 +90,7 @@
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 22px;
     color: #fff;
     font-weight: 600;
   }
@@ -106,8 +99,6 @@
     font-size: 14.5px;
     margin: 15px 0;
   }
-
-  
 
   
   .toggle-box {

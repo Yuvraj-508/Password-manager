@@ -71,7 +71,7 @@ function Form() {
        <div class="toggle-panel toggle-right">
         <h1>Welcome Back!</h1>
         <p>Already have an account?</p>
-        <button class="btn login-btn" onClick={() => setIsActive(false)}>Login</button>
+        <button class="btn login-btn text-2xl" onClick={() => setIsActive(false)}>Login</button>
        </div>
     </div>
     </div>
