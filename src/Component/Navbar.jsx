@@ -10,8 +10,8 @@ function Navbar() {
   const [visible,setVisible]=useState(false)
 
   return (
-    <div className='flex items-center justify-between py-0.5 font-light navbar px-[10vw]'>
-      <Link to='/' className='text-[36px] mb-1'>Logo</Link>
+    <div className='flex items-center justify-between py-1.5 font-light navbar px-[10vw]'>
+      <Link to='/' className='text-[36px] mb-1 '>Logo</Link>
       <ul className='md:flex gap-8 text-lg text-gray-700 hidden'>
         <NavLink to='/' className='flex flex-col items-center gap-1'>
          <p>Home</p>
@@ -30,7 +30,7 @@ function Navbar() {
       <Link to='/dashboard'><button className='bg-[#009b8f] hover:bg-[#6ED4D4] text-white px-5 py-2 rounded-xl font-light cursor-pointer text-xl '>Dashboard</button></Link>
         <Link to='/login'><button className='bg-[#009b8f] hover:bg-[#6ED4D4] text-white px-5 py-2 rounded-xl font-light cursor-pointer text-xl hidden'>Sign Up</button></Link>
          <div className="group relative ">
-        <p className='bg-red-400 text-white px-3.5 py-2 rounded-[100%] text-xl text-center cursor-pointer '>VI
+        <p className='bg-red-400 text-white px-3 py-2 rounded-[100%] text-xl text-center cursor-pointer tracking-wider'>VI
        </p>
        <div className="group-hover:block hidden absolute right-0 pt-3">
         <Link to='/logout'><button className="text-lg bg-slate-200 hover:bg-slate-100 px-5 py-2 text-gray-500 rounded hover:text-black cursor-pointer">Logout</button></Link> 
@@ -62,7 +62,7 @@ function Navbar() {
           <NavLink onClick={()=>setVisible(false)}  className='py-2 pl-7 border border-[#e5e7eb]  cursor-pointer' to='/about'>About Us</NavLink>
           <NavLink onClick={()=>setVisible(false)}  className='py-2 pl-7 border border-[#e5e7eb] cursor-pointer' to='/contact'>Contact Us</NavLink>
           <div className="flex gap-25 absolute bottom-4 font-semibold items-center text-lg w-full justify-center text-white border-t border-gray-200 pt-3 md:px-0 ">
-            <Link to='/login'><button className=' px-3 py-2  rounded text-[#009b8f] cursor-pointer tracking-wider'>Login</button></Link>
+            <Link to='/dashboard'><button className=' px-3 py-2  rounded text-[#009b8f] cursor-pointer tracking-wider'>Login</button></Link>
             <Link to='/login'><button className='bg-[#009b8f] w-35  py-1.5 rounded-xl cursor-pointer tracking-wider'>Sign Up</button></Link>
           </div>
         </div>
