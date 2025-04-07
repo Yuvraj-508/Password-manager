@@ -62,8 +62,8 @@ function Navbar() {
           <NavLink onClick={()=>setVisible(false)}  className='py-2 pl-7 border border-[#e5e7eb]  cursor-pointer' to='/about'>About Us</NavLink>
           <NavLink onClick={()=>setVisible(false)}  className='py-2 pl-7 border border-[#e5e7eb] cursor-pointer' to='/contact'>Contact Us</NavLink>
           <div className="flex gap-25 absolute bottom-4 font-semibold items-center text-lg w-full justify-center text-white border-t border-gray-200 pt-3 md:px-0 ">
-            <Link to='/dashboard'><button className=' px-3 py-2  rounded text-[#009b8f] cursor-pointer tracking-wider'>Login</button></Link>
-            <Link to='/login'><button className='bg-[#009b8f] w-35  py-1.5 rounded-xl cursor-pointer tracking-wider'>Sign Up</button></Link>
+            <Link onClick={()=>setVisible(false)} to='/dashboard'><button className=' px-3 py-2  rounded text-[#009b8f] cursor-pointer tracking-wider'>Login</button></Link>
+            <Link onClick={()=>setVisible(false)} to='/login'><button className='bg-[#009b8f] w-35  py-1.5 rounded-xl cursor-pointer tracking-wider'>Sign Up</button></Link>
           </div>
         </div>
       </div>
