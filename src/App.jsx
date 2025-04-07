@@ -7,6 +7,8 @@ import Contact from './Pages/Contact'
 import Login from './Pages/Login'
 import Navbar from './Component/Navbar'
 import Logout from './Pages/Logout'
+import Dashboard from './Pages/Dashboard'
+
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/logout' element={<Logout/>}/>
+      <Route path='/dashboard' element={<Dashboard/>}/>
+
       </Routes>
       </div>
       </>

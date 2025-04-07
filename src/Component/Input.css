@@ -1,0 +1,16 @@
+input{
+    border: 1px rgba(165, 165, 165, 0.309) solid;
+    box-shadow: 0 0 5px rgb(207, 207, 207);
+    border-radius: 8px;
+}
+input:focus {
+    outline: 1px solid #46dfdf;
+  
+    box-shadow: none;
+  }
+
+::placeholder{
+    color: rgb(195, 195, 195);
+    font-size : 14px;
+}  
+  

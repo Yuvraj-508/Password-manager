@@ -11,8 +11,8 @@ function Navbar() {
 
   return (
     <div className='flex items-center justify-between py-0.5 font-light navbar px-[10vw]'>
-      <Link to='/' className='text-[46px] mb-3'>Logo</Link>
-      <ul className='md:flex gap-8 text-xl text-gray-700 hidden'>
+      <Link to='/' className='text-[36px] mb-1'>Logo</Link>
+      <ul className='md:flex gap-8 text-lg text-gray-700 hidden'>
         <NavLink to='/' className='flex flex-col items-center gap-1'>
          <p>Home</p>
          <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
@@ -26,10 +26,10 @@ function Navbar() {
          <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
         </NavLink>
       </ul>
-      <div className="md:flex items-center gap-4 hidden">
-      <Link to='/login'><button className='bg-[#009b8f] hover:bg-[#6ED4D4] text-white px-5 py-2 rounded-xl font-light cursor-pointer text-xl hidden'>Dashboard</button></Link>
-        <Link to='/login'><button className='bg-[#009b8f] hover:bg-[#6ED4D4] text-white px-5 py-2 rounded-xl font-light cursor-pointer text-xl '>Sign Up</button></Link>
-         <div className="group relative hidden">
+      <div className="md:flex items-center gap-1 hidden">
+      <Link to='/dashboard'><button className='bg-[#009b8f] hover:bg-[#6ED4D4] text-white px-5 py-2 rounded-xl font-light cursor-pointer text-xl '>Dashboard</button></Link>
+        <Link to='/login'><button className='bg-[#009b8f] hover:bg-[#6ED4D4] text-white px-5 py-2 rounded-xl font-light cursor-pointer text-xl hidden'>Sign Up</button></Link>
+         <div className="group relative ">
         <p className='bg-red-400 text-white px-3.5 py-2 rounded-[100%] text-xl text-center cursor-pointer '>VI
        </p>
        <div className="group-hover:block hidden absolute right-0 pt-3">
