@@ -47,36 +47,78 @@ function Data() {
         </div>
       </div> */}
       <table className="table-auto w-full rounded-md overflow-hidden">
-        <thead className="bg-gray-500 text-white ">
+        <colgroup>
+          <col className="w-32" /> {/* SNo */}
+          <col className="w-[300px]" /> {/* URL */}
+          <col className="w-32" /> {/* Username */}
+          <col className="w-32" /> {/* Password */}
+          <col className="w-32" /> {/* Actions */}
+        </colgroup>
+
+        <thead className="bg-gray-500 text-white">
           <tr>
             <th className="py-1">SNo</th>
             <th className="py-1">Url</th>
             <th className="py-1">Username</th>
             <th className="py-1">Password</th>
             <th className="py-1">Actions</th>
-
           </tr>
         </thead>
+
         <tbody className="bg-gray-200">
           <tr>
-            <td className="py-2 border-white text-center w-32">1</td>
-            <td className="py-2 border-white text-center w-32">https://www.youtube.com/</td>
-            <td className="py-2 border-white text-center w-32">yuvraj-508</td>
-            <td className="py-2 border-white text-center w-32">1235678</td>
-            <td className="py-2 border-white text-center w-32">
-            <lord-icon
-              src="https://cdn.lordicon.com/gwlusjdu.json"
-              trigger="hover"
-              style={{ width: "30px", height: "50px" }}
-              className="pr-5"
-            ></lord-icon>
-               <lord-icon
-              src="https://cdn.lordicon.com/wpyrrmcq.json"
-              trigger="hover"
-              style={{ width: "30px", height: "50px" }}
-              ></lord-icon>
+            <td className="py-2 border-white text-center">1</td>
+            {/* URL */}
+            <td className="py-2 pr-2 border-white text-center">
+              <div className="max-w-[400px] overflow-x-auto whitespace-nowrap">
+                https://www.youtube.com/
+              </div>
             </td>
 
+            {/* Username */}
+            <td className="py-2 px-4 border-white text-center">
+              <div className="flex items-center justify-center gap-1">
+                <div className="max-w-[300px] overflow-x-auto whitespace-nowrap">
+                  yuvraj-508
+                </div>
+                <lord-icon
+                  src="https://cdn.lordicon.com/iykgtsbt.json"
+                  trigger="hover"
+                  style={{ width: "25px", height: "30px" }}
+                  className="cursor-pointer"
+                ></lord-icon>
+              </div>
+            </td>
+
+            {/* Password */}
+            <td className="py-2 px-4 border-white text-center">
+              <div className="flex items-center justify-center gap-1">
+                <div className="max-w-[200px] overflow-x-auto whitespace-nowrap">
+                  786786786
+                </div>
+                <lord-icon
+                  src="https://cdn.lordicon.com/iykgtsbt.json"
+                  trigger="hover"
+                  style={{ width: "25px", height: "30px" }}
+                  className="cursor-pointer"
+                ></lord-icon>
+              </div>
+            </td>
+
+            <td className="py-2 border-white text-center">
+              <lord-icon
+                src="https://cdn.lordicon.com/gwlusjdu.json"
+                trigger="hover"
+                style={{ width: "30px", height: "50px" }}
+                className="mr-3 cursor-pointer"
+              ></lord-icon>
+              <lord-icon
+                src="https://cdn.lordicon.com/wpyrrmcq.json"
+                trigger="hover"
+                style={{ width: "30px", height: "50px" }}
+                className="ml-1 cursor-pointer"
+              ></lord-icon>
+            </td>
           </tr>
         </tbody>
       </table>
