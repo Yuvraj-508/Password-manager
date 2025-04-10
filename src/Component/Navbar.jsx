@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <div className='flex items-center justify-between py-1.5 font-light navbar px-[10vw]'>
       <Link to='/' className='text-[36px] mb-1 '>Logo</Link>
-      <ul className='md:flex gap-8 text-lg text-gray-700 hidden'>
+      <ul className='md:flex gap-8 text-lg text-gray-700 hidden ml-15'>
         <NavLink to='/' className='flex flex-col items-center gap-1'>
          <p>Home</p>
          <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
@@ -30,7 +30,7 @@ function Navbar() {
       <Link to='/dashboard'><button className='bg-[#009b8f] hover:bg-[#6ED4D4] text-white px-5 py-2 rounded-xl font-light cursor-pointer text-xl '>Dashboard</button></Link>
         <Link to='/login'><button className='bg-[#009b8f] hover:bg-[#6ED4D4] text-white px-5 py-2 rounded-xl font-light cursor-pointer text-xl hidden'>Sign Up</button></Link>
          <div className="group relative ">
-        <p className='bg-red-400 text-white px-3 py-2 rounded-[100%] text-xl text-center cursor-pointer tracking-wider'>VI
+        <p className='bg-red-400 text-white px-3 py-2 rounded-[100%] text-xl text-center cursor-pointer tracking-wider'>
        </p>
        <div className="group-hover:block hidden absolute right-0 pt-3">
         <Link to='/logout'><button className="text-lg bg-slate-200 hover:bg-slate-100 px-5 py-2 text-gray-500 rounded hover:text-black cursor-pointer">Logout</button></Link> 
@@ -50,7 +50,7 @@ function Navbar() {
     {/* [mob profir] */}
           <div className="mb-2 py-2 pl-7 hidden ">
             <div className="flex items-center gap-2 "> 
-            <p className='bg-red-400 text-white px-[16px] py-2 rounded-[100%] text-2xl text-center cursor-pointer font-semibold'>V</p>
+            <p className='bg-red-400 text-white px-[16px] py-2 rounded-[100%] text-2xl text-center cursor-pointer font-semibold'></p>
             <div className="text-sm">
               <p className='font-semibold tracking-wider'>Abhi</p>
               <p className='font-light tracking-wide'>abhi020507@gamil.com</p>
