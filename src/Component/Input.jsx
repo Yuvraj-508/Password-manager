@@ -1,9 +1,12 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useRef,useState } from "react";
 import "./Input.css";
 import { DataContext } from "../Manager/Context";
 import { v4 as uuidv4 } from 'uuid';
+
+
 function Input() {
-  const { setForm, form, setPasswordArray, passwordArray } =
+  
+  const { setForm, form, setPasswordArray, passwordArray,show,handleEye,eyeOpen,eyeCross } =
     useContext(DataContext);
 
 
@@ -12,8 +15,8 @@ function Input() {
   };
 
   const handleSubmit = () => {
-    console.log(form);
-    console.log(passwordArray);
+    // console.log(form);
+    // console.log(passwordArray);
 
 
     if (form.id) {
@@ -64,15 +67,18 @@ function Input() {
           placeholder="Username or gmail"
           name="username"
         />
+        <div className="relative">
         <input
           onChange={handleChange}
           value={form.password}
-          type="password"
+          type={show?"text":"password"}
           id=""
-          className=" inp border py-1 px-3 text-lg"
+          className=" relative inp border py-1 px-3 text-lg"
           placeholder="Password"
           name="password"
         />
+        <img src={show ? eyeOpen : eyeCross}  onClick={handleEye} alt="" className="absolute w-5 right-1.5 top-2.5 cursor-pointer"/>
+        </div>
       </div>
       <button
         onClick={handleSubmit}
